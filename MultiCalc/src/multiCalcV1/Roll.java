@@ -10,6 +10,7 @@ public class Roll {
 	private Die die;
 	private int numberRolled;
 	private int[][] multi;
+	// Look into using log probability to make this easier (log_2(X*Y) = log_2(X) + log_2(Y))
 	private BigDecimal[] prob;
 
 	public Roll(int numberRolled, Die die) {
